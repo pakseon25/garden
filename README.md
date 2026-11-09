@@ -1,17 +1,17 @@
-# Quartz v5
+# garden
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Quartz로 만든 개인 위키. `content/`에 Markdown으로 기록하고 `[[문서 제목]]`으로 연결한다.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+## 로컬 미리보기
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Node.js 22 이상이 필요하다. 처음 실행할 때는 다음 순서로 설정한다.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+```sh
+npm ci
+npx quartz create
+npx quartz plugin install --from-config
+```
 
-## Sponsors
+설정이 끝나면 `npx quartz build --serve`를 실행하고 [localhost:8080](http://localhost:8080)을 연다.
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+[Quartz 공식 문서](https://quartz.jzhao.xyz/)
